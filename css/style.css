@@ -27,16 +27,16 @@ header{
     
     background-color: black;
     width: 100%;
-    height: 25px;
+    height: 2.5rem;
 }
-.footer-elements{
+.header-elements{
     display: flex;
     justify-content: flex-end;
     align-items: center;
 
     height: 100%;
 }
-.footer-elements > div{
+.header-elements > div{
     background-color: grey;
     border-radius: 5px;
     margin-right: 5px;
@@ -47,28 +47,21 @@ header{
 
 /* MAIN  */
     main{
-        background-color: black;
-        /* debug: */
         width: 100%;
-        height: calc(100vh - 75px);
-        padding: 1rem 0;
+        height: calc(100vh - 7.5rem);
         overflow-y: auto;
+        background-color: black;
     }
     main > .container{
-        /* height: 100%; */
-        /* background-color: green; */
-        /* debug: */
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
     .member{
+        position: relative;
         width: 246px;
         height: 146px;
-        background-color: blue;
-        /* debug: */
-        position: relative;
         margin: 5px;
     }
     .member-info{
@@ -84,29 +77,62 @@ header{
     }
 /* FOOTER  */
 footer{
-    background-color: grey;
-    /* debug: */
+    background-color: #222222;
     display: flex;
     justify-content: space-between;
 
     width: 100%;
-    height: 50px;
+    height: 5rem;
 }
+
+/* mic and video icon  */
 .media-ico{
-    width: 20%;
-    background-color: red;
-    /* debug; */
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
+.icon{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3px 4px;
+    margin: 0 5px;
+    font-size: 1.2rem;
+}
+.icon i{
+    font-size: 2rem;
+}
+
+
+/* room option icon  */
 .room-control{
-    width: 50%;
-    background-color: yellow;
-    /* debug: */
     height: 100%;
+
+    display: flex;
+    align-items: center;
 }
+
+
+
+/* end meeting button  */
 .exit-btn{
-    width: 10%;
-    background-color: pink;
-    /* debug:  */
     height: 100%;
+    padding: 0 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+.exit-btn span{
+    display: inline-block;
+    font-weight: 900;
+    color: red;
+}
+.active i{
+    color: #4bc800;
 }
