@@ -9,3 +9,56 @@ html{
     font-size: 62.5%;
     font-family: 'Lato', sans-serif;
 }
+
+/* HEADER  */
+header{
+    background-color: blue;
+    /* debug: */
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+    height: 30px;
+}
+.footer-elements{
+    width: 25%;
+    background-color: aqua;
+    /* debug: */
+    height: 100%;
+}
+
+/* MAIN  */
+    main{
+        background-color: black;
+        /* debug: */
+        width: 100%;
+        height: calc(100vh - 80px);
+    }
+/* FOOTER  */
+footer{
+    background-color: grey;
+    /* debug: */
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 50px;
+}
+.media-ico{
+    width: 20%;
+    background-color: red;
+    /* debug; */
+    height: 100%;
+}
+.room-control{
+    width: 50%;
+    background-color: yellow;
+    /* debug: */
+    height: 100%;
+}
+.exit-btn{
+    width: 10%;
+    background-color: pink;
+    /* debug:  */
+    height: 100%;
+}
