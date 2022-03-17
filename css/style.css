@@ -5,10 +5,19 @@
     box-sizing: border-box;
 }
 
+/* COMMON  */
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
 html{
     font-size: 62.5%;
     font-family: 'Lato', sans-serif;
     color: white;
+}
+img{
+    width: 100%;
 }
 
 /* HEADER  */
@@ -38,10 +47,40 @@ header{
 
 /* MAIN  */
     main{
-        /* background-color: black; */
+        background-color: black;
         /* debug: */
         width: 100%;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 75px);
+        padding: 1rem 0;
+        overflow-y: auto;
+    }
+    main > .container{
+        /* height: 100%; */
+        /* background-color: green; */
+        /* debug: */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .member{
+        width: 246px;
+        height: 146px;
+        background-color: blue;
+        /* debug: */
+        position: relative;
+        margin: 5px;
+    }
+    .member-info{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 0.3rem 0.2rem;
+        background-color: rgba(119, 136, 153, 0.4)
     }
 /* FOOTER  */
 footer{
